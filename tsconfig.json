@@ -1,0 +1,18 @@
+{
+    // files = les fichier à allez transpiler
+    "files": ["src/index.ts"],
+    // include permet de lire tous les sous dossier de src
+    //"include": ["src/**/*.ts"],
+    // empche de transpilé des dossier
+    //"exclude" : ["node_module"],
+    // compilerOptions permet de dir le fichier de sorti des fichier ts transpilé
+    "compilerOptions": {
+        "outDir": "dist",
+        // autorise l'import des fichier en js
+        "allowJs": true,
+        // précise le systeme d emodule utilisé
+        "module": "ESNext",
+        // JS de sorti après transpilage
+        "target": "ES6"
+    }
+}
